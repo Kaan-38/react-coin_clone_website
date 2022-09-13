@@ -18,7 +18,7 @@ const App = () => {
        <>
            
              <div className='CoinContainerKapsamOrtala'>
-             <div className='CoinContainerKapsam'>
+             <div className='CoinContainerKapsam' translate='no'>
               <Header />
               <div className='CoinSearchİnput'>
                   

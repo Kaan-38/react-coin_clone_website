@@ -1,0 +1,184 @@
+.CoinCompoment2 {
+    position:absolute;
+    width:100%;
+    height:calc(776px - 64px);
+    background-color:#477ac4;
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-bottom: 7px;
+    top: 64px;
+    border-radius: 0px 0px 12px 12px;
+}
+
+.CoinCompoment2::-webkit-scrollbar {
+    width: 12px;
+   }
+   
+   .CoinCompoment2::-webkit-scrollbar-thumb {
+     background:white; 
+   
+   }
+   .CoinCompoment2::-webkit-scrollbar-track {
+     background:#477ac4;
+     border-radius: 0px 10px 10px 0px;
+   }
+
+   .CoinCompoment2Container{
+    position: relative;
+    width: 346px;
+    height: 168px;
+    background-color: white;
+    box-shadow: 0 0 12px white;
+    border-radius: 7px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 19px;
+    margin-left: 10px;
+    cursor: pointer;
+    
+  
+}
+.CoinCompoment2Container:hover {
+    transform: scale(1.02);
+}
+
+.CoinCompoment2Container label {
+    position: relative;
+    margin-left: 8px;
+}
+.CoinCompoment2Container label img {
+    width:72px;
+    height:72px;
+    border-radius: 50%;
+    box-shadow: 0 0 7px #368dc1;
+    cursor: pointer;
+}
+.CoinCompoment2Container label h2 {
+    position: relative;
+    color: #368dc1;
+    text-shadow: 0 0 2px #368dc1;
+    cursor: pointer;
+}
+
+
+.CoinCompoment2Container span h4 {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    font-size: 26px;
+    cursor: pointer;
+}
+.CoinCompoment2Container span .green {
+    color: green;
+    text-shadow: 0 0 2px green;
+}
+.CoinCompoment2Container span .red {
+    color: #940000;
+    text-shadow: 0 0 2px #940000;
+}
+
+.CoinCompoment2Container span .analiz-yükşeliş-cubuk {
+    position: absolute; 
+    width: 142px;
+    height: 9px;
+    right: 10px;
+    top:84px;
+    background-color:green;
+    box-shadow: 0 0 8px green;
+    border-radius:4px;
+    cursor: pointer;
+}
+
+.CoinCompoment2Container span .analiz-düşüş-cubuk {
+    position: absolute; 
+    width: 142px;
+    height: 9px;
+    right: 10px;
+    top:84px;
+    background-color:#940000;
+    box-shadow: 0 0 8px #940000;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.CoinCompoment2Container span .yükseliş {
+  position: absolute;
+  right: 10px;
+  color: green;
+  text-shadow: 0 0 1px green;
+  bottom: 6px;
+  font-size: 22px;
+
+}
+.CoinCompoment2Container span .düşüş {
+    position: absolute;
+    right: 10px;
+    color:#940000;
+    text-shadow: 0 0 1px #940000;
+    bottom: 6px;
+    font-size: 22px;
+  }
+
+  .SkeletonLeft {
+    position:relative;
+
+  }
+   .loading {
+    position: relative;
+    width:200px;
+    height:32px;
+    background-color: #c1c1c1;
+    margin-left: 8px;
+    line-height: 50px;
+    margin: 3px;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+   .loading::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background:linear-gradient(to right, transparent, #d7d7d7, transparent);
+    transform: translateX(-100%);
+    animation:skeleton 1s  linear infinite;
+  }
+   @keyframes skeleton {
+    100% {
+        transform: translateX(100%);
+    }
+   }
+   
+  .SkeletonLeft .Skeletonİmg.loading, .SkeletonLeft .Skeletonİmg.loading::after  {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+  }
+ 
+
+  .SkeletonRight {
+    position:absolute;
+   right: 6px;
+
+  }
+ .loading_left {
+  
+    width: 66px;
+    height: 40px;
+    border-radius: 3px;
+    background-color: #c1c1c1;
+    margin: 13px;
+  }
+
+.SkeletonRight .loading {
+    width: 58px;
+    height: 40px;
+    border-radius: 2px;
+    margin: 11px;
+}
+
+

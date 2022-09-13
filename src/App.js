@@ -1,25 +1,43 @@
-import logo from './logo.svg';
+import React, { useEffect, useReducer, useState } from 'react'
 import './App.css';
-
-function App() {
+import axios from 'axios';
+import Coin from './Compoment/Coin';
+const App = () => {
+  const [data, setData] = useState([])
+  const [searccoin, setSearchcoin] = useState('')
+  const coin  = async () =>{
+      const response = await axios.get ('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false')
+      setData(response.data)
+  }
+  useEffect(() => {
+       coin()
+  },[])
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+       <>
+         
+             <div className='CoinContainerKapsamOrtala'>
+             <div className='CoinContainerKapsam'>
+              <div className='CoinSearchİnput'>
+                  
+                  <span>
+                  <input type="text" placeholder=' ' onChange={((e) => setSearchcoin(e.target.value.toUpperCase()))} />
+                  <h3>
+                     SEARCH COİN...
+                  </h3>
+                  </span>
+                  
+               </div>            
+                
+                    <Coin data={data} SearchCoin={searccoin} />
+  
+              </div>
+           
+             </div>
+          
+           
+       </>
+  )
 }
 
-export default App;
+export default App

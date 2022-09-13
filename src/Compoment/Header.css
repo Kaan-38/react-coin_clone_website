@@ -1,0 +1,252 @@
+
+header {
+    position: relative;
+    width:100%;
+    height: 90px;
+    background-color:#477ac4;
+    box-shadow: 0 0 12px #477ac4;
+    border-radius: 8px 8px 0px 0px;
+    border-bottom: 6px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.HeaderRight {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+}
+.HeaderRight .Headerİcon {
+    font-size: 60px;
+    color: white;
+    text-shadow: 0 0 4px white;
+}
+.HeaderRight h2{
+    position: relative;
+    width:210px;
+    height: 41px;
+    background-color:white;
+    box-shadow: 0 0 7px white;
+    color: #477ac4;
+    text-shadow: 0 0 2px #477ac4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    margin-left: 14px;
+    cursor: pointer;
+}
+.HeaderRight h2:after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-width: 11px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    transform: rotate(90deg);
+    left: -22px;
+}
+.HeaderRight h2:hover {
+    transform: scale(1.02);
+}
+
+
+.HeaderLeft {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-right: 16px;   
+}
+.HeaderLeft a {
+    position: relative;
+    color: white;
+    text-shadow:0 0 2px white;
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size:24px;
+    font-weight: bold;
+}
+
+.HeaderLeft .NavBar:hover {
+    transform: scale(1.02);
+}
+.HeaderLeft a.active
+  {
+    position: relative;
+    width: auto;
+    height: 36px;
+    background-color:white;
+    box-shadow: 0 0 8px white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color:#477ac4;
+    text-shadow: 0 0 2px #477ac4;
+    cursor: pointer;
+    padding-left:18px;
+    padding-right: 18px;
+    letter-spacing: 0.8px;
+    border-radius: 4px;
+}
+
+@media only screen and (max-width:1230px) {
+    .HeaderLeft .NavBar {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:1060px) {
+    .HeaderLeft .NavBar {
+        font-size: 18px;
+    }
+    .HeaderRight h2 {
+        width: 185px;
+        height:37px;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:960px) {
+    .HeaderLeft .NavBar {
+        font-size: 16.5px;
+    }
+    .HeaderRight h2 {
+        width: 180px;
+        height:35px;
+        font-size: 18.5px;
+    }
+}
+
+@media only screen and (max-width:890px) {
+    .HeaderLeft {
+        margin-right:0px;
+    }
+   .HeaderLeft .NavBar {
+    margin-left: 12px;
+    margin-right: 12px;
+   }
+   .NavBar.active{
+    padding-left: 9px;
+    padding-right: 9px;
+   }
+    .HeaderLeft .NavBar {
+        font-size: 16.5px;
+    }
+    .HeaderRight h2 {
+        width: 180px;
+        height:35px;
+        font-size: 18.5px;
+    }
+}
+
+@media only screen and (max-width:790px) {
+    .HeaderLeft {
+        margin-right:0px;
+    }
+   .HeaderLeft .NavBar {
+    margin-left: 9px;
+    margin-right: 9px;
+   }
+   .NavBar.active{
+    padding-left: 9px;
+    padding-right: 9px;
+   }
+    .HeaderLeft .NavBar {
+        font-size: 16px;
+    }
+    .HeaderRight h2 {
+        width: 170px;
+        height:36px;
+        font-size: 17.5px;
+    }
+}
+
+@media only screen and (max-width:720px) {
+    
+    .HeaderLeft .NavBar {
+        font-size: 16px;
+    }
+    .HeaderRight h2 {
+        width: 160px;
+        height:36px;
+        font-size: 16.5px;
+    }
+    .HeaderLeft .NavBar {
+        margin-left: 7px;
+        margin-right: 7px;
+       }
+       .NavBar.active{
+        padding-left: 9px;
+        padding-right: 9px;
+       }
+}
+@media only screen and (max-width:670px) {
+
+    .HeaderLeft .NavBar {
+        font-size: 14.5px;
+    }
+    .HeaderRight h2{
+        width: 154px;
+    }
+    .HeaderRight .Headerİcon {
+        font-size: 50px;
+    }
+    .HeaderRight {
+        margin-left: 5px;
+    }
+}
+
+
+@media only screen and (max-width:616px) {
+    .HeaderRight h2{
+        width: 140px;
+    }
+    .HeaderRight .Headerİcon {
+        font-size: 50px;
+    }
+    .HeaderLeft .NavBar {
+        font-size: 13.5px;
+    }
+    .NavBar.active{
+        padding-left: 5px;
+        padding-right: 5px;
+       }
+}
+@media only screen and (max-width:570px) {
+
+    .HeaderRight h2{
+        width: 130px;
+        font-size: 15px;
+    }
+  
+    .HeaderLeft .NavBar {
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width:538px) {
+    
+    .HeaderRight h2{
+        width: 120px;
+        font-size: 14px;
+    }
+  
+    .HeaderLeft .NavBar {
+        font-size: 12px;
+    }
+}
+@media only screen and (max-width:528px) {
+  
+    .HeaderRight h2{
+        width: 115px;
+        font-size: 13.5px;
+    }
+  
+    .HeaderLeft .NavBar {
+        font-size: 11px;
+    }
+}

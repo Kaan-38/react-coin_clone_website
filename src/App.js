@@ -2,6 +2,7 @@ import React, { useEffect,  useState } from 'react'
 import './App.css';
 import axios from 'axios';
 import Coin from './Compoment/Coin';
+import Header from './Compoment/Header';
 const App = () => {
   const [data, setData] = useState([])
   const [searccoin, setSearchcoin] = useState('')
@@ -15,9 +16,10 @@ const App = () => {
   
   return (
        <>
-         
+           
              <div className='CoinContainerKapsamOrtala'>
              <div className='CoinContainerKapsam'>
+              <Header />
               <div className='CoinSearchİnput'>
                   
                   <span>

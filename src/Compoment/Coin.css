@@ -1,7 +1,7 @@
 .CoinCompoment2 {
     position:absolute;
     width:100%;
-    height:calc(776px - 64px);
+    height:calc(776px - 154px);
     background-color:#477ac4;
     overflow: auto;
     display: flex;
@@ -9,7 +9,7 @@
     align-items: center;
     justify-content: space-around;
     padding-bottom: 7px;
-    top: 64px;
+    top: 154px;
     border-radius: 0px 0px 12px 12px;
 }
 

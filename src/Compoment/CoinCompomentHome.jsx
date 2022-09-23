@@ -4,7 +4,7 @@ import { MainContext } from '../CreateContext'
 import { useContext } from 'react'
 import { FaBitcoin} from 'react-icons/fa'
 const CoinCompomentHome = () => {
-  const { active } = useContext(MainContext)
+  const {  } = useContext(MainContext)
   return (
     <div className={`CoinCompomentHome`} >
            <div className='ContainerLeft'>

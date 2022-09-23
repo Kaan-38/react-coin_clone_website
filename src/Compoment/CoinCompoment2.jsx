@@ -2,7 +2,7 @@ import React from 'react'
 import './CoinCompoment2.css'
 import { MainContext } from '../CreateContext'
 import { useContext } from 'react'
-import { useState } from 'react'
+
 const CoinCompoment2 = () => {
   const {data, search, active, skeletonloading} = useContext(MainContext)
   

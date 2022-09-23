@@ -2,8 +2,7 @@ import React, { useContext } from 'react'
 import './Login.css'
 import { MainContext } from '../CreateContext'
 import { FaWindowClose } from 'react-icons/fa'
-import { useState } from 'react'
-import { useEffect } from 'react'
+
 const Login = () => {
    const { setLoginactive, loginactive } = useContext(MainContext)
    

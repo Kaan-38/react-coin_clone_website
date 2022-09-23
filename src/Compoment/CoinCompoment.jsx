@@ -1,15 +1,15 @@
 import React, { createContext, useContext } from 'react'
 import './CoinCompoment.css'
 import { MainContext } from '../CreateContext'
-import { FaFontAwesome, FaKaaba, FaStar } from "react-icons/fa";
+
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import {  faLongArrowRight, faStar } from '@fortawesome/free-solid-svg-icons'
-import CoinSaveContainer from './CoinSaveContainer';
+import {  faStar } from '@fortawesome/free-solid-svg-icons'
+
 import { useEffect } from 'react';
 
 const CoinCompoment = ( { name, image, price, price_change, id } ) => {
-    const {data, search, active, setİconActive, iconActive, setCount, count} = useContext(MainContext)
+    const {setCount, count} = useContext(MainContext)
     
     const [activee, setActivee] = useState(false)
     const click = () =>{

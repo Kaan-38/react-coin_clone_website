@@ -7,7 +7,7 @@ import Header from './Compoment/Header'
 import CoinCompoment from './Compoment/CoinCompoment'
 import { MainContext } from './CreateContext'
 import CoinCompoment2 from './Compoment/CoinCompoment2'
-import { FaBitcoin, FaStar } from 'react-icons/fa'
+import { FaBitcoin } from 'react-icons/fa'
 import CoinCompomentHome from './Compoment/CoinCompomentHome'
 import Login from './Compoment/Login'
 

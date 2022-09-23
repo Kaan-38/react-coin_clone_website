@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from 'react'
+import React, { useContext, useEffect } from 'react'
 import './Header.css'
 import { FaBitcoin } from 'react-icons/fa';
 import { MainContext } from '../CreateContext';

@@ -1,80 +1,155 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
+  font-weight: bold;
 }
 body {
-  background-color:#477ac4;
+  background-color: #477ac4;
 }
-.CoinContainerKapsamOrtala {
+ body::-webkit-scrollbar {
+  width: 12px;
+ }
+ 
+ body::-webkit-scrollbar-thumb {
+   background:white; 
+ 
+ }
+ body::-webkit-scrollbar-track {
+   background:#477ac4;
+ }
+.ContainerOrtala {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+ 
 }
-.CoinContainerKapsam {
+.ContainerKapsam {
   position: relative;
   width: 1300px;
-  height: 776px;
-  box-shadow:0 0 14px white;
-  border-radius: 10px;
-  margin-top: 28px;
+  height: 730px;
+  background-color:#477ac4;
+  box-shadow: 0 0 12px white;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 12px;
 }
-.CoinSearchİnput {
+
+.SearchInput {
   position: relative;
   width: 100%;
-  height: 64px;
+  height: 56px;
   background-color:#477ac4;
-  border-bottom: 4px solid white;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 12px 12px 0px 0px;
+  border-bottom: 6px solid white;
 }
-.CoinSearchİnput input {
-  position: relative;
-  width: 300px;
-  height:38px;
-  outline: none;
+.SearchInput input {
+  width: 270px;
+  height: 34px;
+  border-radius: 3px;
   border-style: none;
-  background-color: #477ac4;
+  outline: none;
+  font-size: 18px;
+  background-color: white;
+  box-shadow: 0 0 6px white;
+  color: #477ac4;
+  text-shadow: 0 0 2px #477ac4;
+}
+.SearchInput input::placeholder {
+  position: relative;
+  color: #477ac4;
+  text-shadow: 0 0 2px #477ac4;
+  left: 3px;
+}
+.loadingg {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 26px;
+}
+.loading-icon {
+  font-size: 300px;
+  color: white;
+  text-shadow: 0 0 4px white;
+}
+.loadingg h2 {
   color: white;
   text-shadow: 0 0 2px white;
-  border-bottom: 3px solid white;
-  font-size: 16px;
+  font-size: 44px;
+  margin-top: 6px;
 }
-.CoinSearchİnput input:focus {
-  border: 3px solid white;
-}
-.CoinSearchİnput input:not(:placeholder-shown) + h3 , .CoinSearchİnput input:focus + h3 {
-  top: -10px;
-  font-size:15px;
-  background-color: #477ac4;
-  padding-left: 5px;
-  padding-right: 5px;
-}
-.CoinSearchİnput h3 {
+ul {
   position: absolute;
-  color: white;
-  text-shadow: 0 0 2px white;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  bottom: 10px;
   left: 7px;
-  pointer-events: none;
-  top: 4px;
 }
-.CoinSearchİnput span {
-  position:relative;
-  height: auto;
+li {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color:white;
+  box-shadow: 0 0 6px white;
+  margin: 5px;
+  cursor: pointer;
+}
+.save-coin-count {
+  width:auto;
+  height: 100%;
+  position: absolute;
+  left: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
-@media only screen and (max-width:1350px) {
-  .CoinContainerKapsam {
-    position: relative;
-    width:95%;
-    height: 776px;
-    box-shadow:0 0 12px white;
-    margin-top: 28px;
-    border-radius: 10px;
+.save-coin-count.hidden {
+ display: none;
+}
+.save-coin-count span {
+  position: absolute;
+  color: #477ac4;
+  text-shadow: 0 0 1px #477ac4;
+  margin-top: 3px;
+  z-index: 1000;
+}
+.star-icon-save {
+  color:white;
+  text-shadow: 0 0 1px white;
+  font-size: 33px;
+  cursor: pointer;
+}
+.star-icon-save:hover {
+  transform: scale(1.02);
+  font-size: 34px;
+}
+
+
+@media only screen and (max-width:1350px){
+  .ContainerKapsam {
+    width: 96%;
+  }
+}
+@media only screen and (max-width:730px) {
+  .ContainerKapsam {
+    height: 670px;
+  }
+}
+@media only screen and (max-width:610px) {
+  .ContainerKapsam {
+    height: 638px;
+  }
+}
+@media only screen and (max-width:586px) {
+  .ContainerKapsam {
+    height: 632px;
   }
 }

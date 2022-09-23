@@ -1,19 +1,22 @@
 .CoinCompoment2 {
-    position:absolute;
-    width:100%;
-    height:calc(776px - 154px);
+    position: absolute;
+    width: 100%;
+    height:calc(730px - 146px);
     background-color:#477ac4;
-    overflow: auto;
+    top: 146px;
+    left: 100%;
+    transition: 1s;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     padding-bottom: 7px;
-    top: 154px;
-    border-radius: 0px 0px 12px 12px;
-}
-
-.CoinCompoment2::-webkit-scrollbar {
+    overflow:hidden scroll;
+  }
+  .CoinCompoment2.active {
+    left: 0%;
+  }
+  .CoinCompoment2::-webkit-scrollbar {
     width: 12px;
    }
    
@@ -25,7 +28,7 @@
      background:#477ac4;
      border-radius: 0px 10px 10px 0px;
    }
-
+  
    .CoinCompoment2Container{
     position: relative;
     width: 346px;
@@ -40,49 +43,48 @@
     margin-top: 19px;
     margin-left: 10px;
     cursor: pointer;
-    
   
-}
-.CoinCompoment2Container:hover {
+  }
+  .CoinCompoment2Container:hover {
     transform: scale(1.02);
-}
-
-.CoinCompoment2Container label {
+  }
+  
+  .CoinCompoment2Container label {
     position: relative;
     margin-left: 8px;
-}
-.CoinCompoment2Container label img {
+  }
+  .CoinCompoment2Container label img {
     width:72px;
     height:72px;
     border-radius: 50%;
     box-shadow: 0 0 7px #368dc1;
     cursor: pointer;
-}
-.CoinCompoment2Container label h2 {
+  }
+  .CoinCompoment2Container label h2 {
     position: relative;
     color: #368dc1;
     text-shadow: 0 0 2px #368dc1;
     cursor: pointer;
-}
-
-
-.CoinCompoment2Container span h4 {
+  }
+  
+  
+  .CoinCompoment2Container span h4 {
     position: absolute;
     top: 8px;
     right: 8px;
     font-size: 26px;
     cursor: pointer;
-}
-.CoinCompoment2Container span .green {
+  }
+  .CoinCompoment2Container span .green {
     color: green;
     text-shadow: 0 0 2px green;
-}
-.CoinCompoment2Container span .red {
+  }
+  .CoinCompoment2Container span .red {
     color: #940000;
     text-shadow: 0 0 2px #940000;
-}
-
-.CoinCompoment2Container span .analiz-yükşeliş-cubuk {
+  }
+  
+  .CoinCompoment2Container span .analiz-yükşeliş-cubuk {
     position: absolute; 
     width: 142px;
     height: 9px;
@@ -92,9 +94,23 @@
     box-shadow: 0 0 8px green;
     border-radius:4px;
     cursor: pointer;
-}
-
-.CoinCompoment2Container span .analiz-düşüş-cubuk {
+  }
+  .CoinCompoment2Container span .analiz-yükşeliş-cubuk::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-width:9px;
+  border-style: solid;
+  border-color:green transparent transparent transparent;
+  right: 3px;
+  top: -17.5px;
+  transform: rotate(180deg);
+  animation: visible 1s ;
+  visibility: hidden;
+  }
+  
+  .CoinCompoment2Container span .analiz-düşüş-cubuk {
     position: absolute; 
     width: 142px;
     height: 9px;
@@ -104,17 +120,48 @@
     box-shadow: 0 0 8px #940000;
     border-radius: 4px;
     cursor: pointer;
-}
-.CoinCompoment2Container span .yükseliş {
+  }
+  .CoinCompoment2Container span .analiz-düşüş-cubuk::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border-width:9px;
+  border-style: solid;
+  border-color:#940000 transparent transparent transparent;
+  right: 3px;
+  bottom: -17.5px;
+  transform: rotate(0deg);
+  animation: visible 2s ;
+  visibility: hidden;
+  }
+  @keyframes visible {
+  0%{
+    visibility: hidden;
+  }
+  25%{
+    visibility:visible;
+  }
+  50%{
+    visibility: hidden;
+  }
+  75%{
+    visibility: visible;
+  }
+  100%{
+    visibility: hidden;
+  }
+  }
+  .CoinCompoment2Container span .yükseliş {
   position: absolute;
   right: 10px;
   color: green;
   text-shadow: 0 0 1px green;
   bottom: 6px;
   font-size: 22px;
-
-}
-.CoinCompoment2Container span .düşüş {
+  
+  }
+  .CoinCompoment2Container span .düşüş {
     position: absolute;
     right: 10px;
     color:#940000;
@@ -122,10 +169,10 @@
     bottom: 6px;
     font-size: 22px;
   }
-
+  
   .SkeletonLeft {
     position:relative;
-
+  
   }
    .loading {
     position: relative;
@@ -158,14 +205,14 @@
     height: 72px;
     border-radius: 50%;
   }
- 
-
+  
+  
   .SkeletonRight {
     position:absolute;
    right: 6px;
-
+  
   }
- .loading_left {
+  .loading_left {
   
     width: 66px;
     height: 40px;
@@ -173,12 +220,50 @@
     background-color: #c1c1c1;
     margin: 13px;
   }
-
-.SkeletonRight .loading {
+  
+  .SkeletonRight .loading {
     width: 58px;
     height: 40px;
     border-radius: 2px;
     margin: 11px;
-}
-
-
+  }
+  
+  .scroll_active {
+  position:fixed;
+  width: 40px;
+  height: 40px;
+  background-color:white;
+  box-shadow: 0 0 10px white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom:10px;
+  right:40px;
+  z-index: 10000;
+  display:none;
+  cursor: pointer;
+  }
+  .scroll_active.active {
+  
+  display: flex;
+  }
+  .scroll_active .icon {
+  color: #368dc1;
+  font-size: 36px;
+  }
+  @media only screen and (max-width:730px) {
+  .CoinCompoment2 {
+      height:calc(670px - 146px);
+  }
+  }
+  @media only screen and (max-width:610px) {
+  .CoinCompoment2 {
+      height:calc(638px - 146px);
+  }
+  }
+  @media only screen and (max-width:586px) {
+  .CoinCompoment2 {
+      height:calc(632px - 146px);
+  }
+  }

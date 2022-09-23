@@ -1,0 +1,28 @@
+.CoinSaveContainerKapsam{
+    position: absolute;
+    width: 100%;
+    height:calc(730px - 146px);
+    background-color:#477ac4;
+    overflow: auto;
+    top: 146px;
+    left: 100%;
+    transition: 1s;
+}
+.CoinSaveContainerKapsam.active{
+    left: 0px;
+}
+@media only screen and (max-width:730px) {
+    .CoinSaveContainerKapsam {
+        height:calc(670px - 146px);
+    }
+  }
+  @media only screen and (max-width:610px) {
+    .CoinSaveContainerKapsam {
+        height:calc(638px - 146px);
+    }
+  }
+  @media only screen and (max-width:586px) {
+    .CoinSaveContainerKapsam {
+        height:calc(632px - 146px);
+    }
+  }

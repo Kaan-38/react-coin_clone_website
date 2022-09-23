@@ -1,0 +1,138 @@
+.LoginContainerOrtala{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.LoginContainer {
+    position: absolute;
+    width: 386px;
+    height: 410px;
+    background-color:#477ac4;
+    border: 4px solid white;
+    border-radius: 10px;
+    top: 190px;
+    left: -100%;
+    transition: 1s;
+    display: flex;
+    flex-direction:column; 
+    justify-content: center;
+    align-items: center;
+}
+.LoginContainer.active {
+    left: auto;
+}
+
+.LoginContainer div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+
+.LoginContainer div span h1 {
+    position: relative;
+    color: white;
+    text-shadow: 0 0 2px white;
+    font-size: 27px;
+    cursor: pointer;
+}
+
+.LoginContainer div span h1::after {
+    position: absolute;
+    content: '';
+    width:100px;
+    height: 4px;
+    background-color: white;
+    box-shadow: 0 0 6px white;
+    border-radius: 2px;
+    left: 0px;
+    bottom: -5px;
+}
+
+.LoginContainer  label {
+    position: relative;
+    width: 264px;
+    height: 41px;
+    background-color:#477ac4;
+    border: 3px solid white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.LoginContainer label input {
+    position: absolute;
+    width: 90%;
+    height:90%;
+    background-color: #477ac4;
+    border-style: none;
+    outline:none;
+    color: white;
+    text-shadow: 0 0 2px white;
+    font-size: 15px;
+}
+.LoginContainer label h4 {
+    position: absolute;
+    color: white;
+    text-shadow: 0 0 2px white;
+    left: 8px;
+    z-index: 1000;
+}
+ 
+.LoginContainer label input:not(:placeholder-shown) + h4, .LoginContainer label input:focus + h4 {
+    width: auto;
+    background-color:#477ac4;
+    font-size:15px;
+    top: -10px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+.LoginContainer span h3 {
+    width: 104px;
+    height: 39px;
+    color: white;
+    text-shadow: 0 0 2px white;
+    background-color: #477ac4;
+    border: 3px solid white;
+    border-radius: 4px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    cursor: pointer;
+}
+.LoginContainer span h3:hover {
+    transform: scale(1.02);
+}
+
+.LoginContainer span h5 {
+    position: relative;
+    color: white;
+    text-shadow: 0 0 2px white;
+    font-size: 17px;
+    cursor: pointer;
+}
+.LoginContainer span h5::after {
+    position: absolute;
+    content: '';
+    width: 145px;
+    height: 4px;
+    background-color: white;
+    box-shadow: 0 0 6px white;
+    border-radius: 2px;
+    left: 0px;
+    bottom: -7px;
+}
+
+.icon-close {
+    position: absolute;
+    right: -40px;
+    top: -25px;
+    color: white;
+    font-size: 29px;
+    cursor: pointer;
+}
+.icon-close:hover {
+    transform: scale(1.02);
+}
+

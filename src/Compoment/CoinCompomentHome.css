@@ -1,0 +1,375 @@
+.CoinCompomentHome {
+    position: absolute;
+    width: 100%;
+    height:calc(730px - 146px);
+    background-color: #477ac4;
+    top: 146px;
+    display: flex;
+}
+.CoinCompomentHome .ContainerLeft {
+    position: relative;
+    width: 50%;
+    height:calc(776px - 146px);
+   
+    display: flex;
+    flex-direction: column;
+}
+.ContainerLeft .Container {
+    position: relative;
+    line-height:130px;
+    margin-left: 16px;
+    top: 62px;
+}
+
+.ContainerLeft .Container .icon {
+    position: relative;
+    width:474px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -33px;
+}
+
+.ContainerLeftİcon {
+    font-size: 190px;
+    color: white;
+    animation: rotate 3s linear infinite;
+}
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(20deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.h3 {
+    position: relative;
+    line-height: 34px;
+    top: 7px;
+}
+.ContainerLeft label h2 {
+    width:474px;
+    height: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 0 9px white;
+    color: #477ac4;
+    text-shadow: 0 0 2px #477ac4;
+    cursor: pointer;
+    border-radius: 4px;
+    letter-spacing: 1px;
+    font-size: 25px;
+}
+
+.ContainerLeft label h3 {
+    position: relative;
+    width:474px;
+    color: white;
+    text-shadow: 0 0 3px white;
+    cursor: pointer;
+    font-size: 23px;
+    line-height: 26px;
+}
+
+.ContainerLeft label h4 {
+    position: relative;
+    width: 190px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    box-shadow: 0 0 8px white;
+    color:#477ac4;
+    text-shadow: 0 0 2px #477ac4;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 24px;
+    top: 13px;
+}
+.ContainerLeft label h4:hover {
+    transform: scale(1.02);
+}
+
+.ContainerRightKapsam {
+    position: relative;
+    width: 50%;
+    height:calc(776px - 146px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ContainerRight {
+    position: relative;
+     width: 90%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+   
+}
+
+.ContainerRightİcon {
+     position: relative;
+     width: 100%;
+     height: 100%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+}
+.ContainerRightİcon .icon {
+    position: absolute;
+    font-size: 390px;
+    color: white;
+    text-shadow: 0 0 2px white;
+    cursor: pointer;
+    top:150px;
+}
+.ContainerRightToken {
+     position:absolute;
+     width: 210px;
+     height: 96px;
+     background-color:white;
+     box-shadow: 0 0 7px white;
+     display: flex;
+     align-items: center;
+     border-radius: 5px;
+     cursor: pointer;
+     margin-left: 14px;
+     top: 32px;
+     animation:token 3s linear infinite;
+}
+@keyframes token {
+    0%{
+        transform: translateX(0px);
+    }
+    25%{
+        transform: translateX(20px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    75%{
+        transform: translateX(-20px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.ContainerRightToken::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-width: 11px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+    transform: rotate(0deg);
+    bottom: -22px;
+    left:calc(50% - 11px);
+}
+.ContainerRightToken span {
+    position: relative;
+    margin-left:9px;
+}
+.ContainerRightToken .icon {
+    font-size: 56px;
+    color:#477ac4;
+}
+.ContainerRightToken label h3 {
+    position: relative;
+    color:#477ac4;
+    text-shadow:#477ac4;
+    margin-left: 5px;
+    cursor: pointer;
+}
+@media only screen and (max-width:1350px) {
+   
+    .ContainerLeft label h2 , .ContainerLeft label h3, .ContainerLeft .Container .icon  {
+        width: 420px;
+    }     
+
+}
+
+@media only screen and (max-width:1000px) {
+    .ContainerRightİcon .icon {
+      font-size: 348px;
+    }
+    .ContainerLeft label h2, .ContainerLeft label h3, .ContainerLeft .Container .icon  {
+        width:390px;
+    }  
+    .ContainerLeft label h2{
+        font-size: 24px;
+    } 
+
+}
+
+@media only screen and (max-width:880px) {
+
+    .ContainerRightİcon .icon {
+        font-size: 318px;
+      }
+      .ContainerLeft label h2, .ContainerLeft label h3, .ContainerLeft .Container .icon  {
+          width:370px;
+      }  
+      .ContainerLeft label h2{
+          font-size: 22px;
+      } 
+}
+@media only screen and (max-width:840px) {
+    
+    .ContainerRightİcon .icon {
+        font-size: 304px;
+      }
+   
+    .ContainerLeft label h3 {
+        font-size: 21px;
+    }
+    .ContainerLeft label h2, .ContainerLeft label h3, .ContainerLeft .Container .icon  {
+        width:320px;
+    }  
+    .ContainerLeft label h2{
+        font-size: 19px;
+    } 
+}
+@media only screen and (max-width:730px) {
+  
+    .ContainerLeft label h2, .ContainerLeft label h3, .ContainerLeft .Container .icon  {
+        width:300px;
+    }  
+    .ContainerLeft label h2{
+        font-size: 18.5px;
+    } 
+    .ContainerLeft label h3 {
+        font-size: 19px;
+    }
+    .ContainerLeft label h4 {
+        width: 170px;
+        height: 40px;
+        font-size: 22px;
+    }
+    .ContainerRightİcon .icon {
+        font-size: 282px;
+      }
+      .ContainerLeftİcon {
+        font-size: 140px;
+      }
+}
+@media only screen and (max-width:650px) {
+  
+    .ContainerLeft label h2, .ContainerLeft label h3, .ContainerLeft .Container .icon  {
+        width:280px;
+    }  
+    .ContainerLeft label h2{
+        font-size: 16.5px;
+    } 
+    .ContainerLeft label h3 {
+        font-size: 17.5px;
+    }
+    .ContainerLeft label h4 {
+        width: 160px;
+        height: 38px;
+        font-size: 22px;
+    }
+    .ContainerRightİcon .icon {
+        font-size: 260px;
+      }
+}
+@media only screen and (max-width:610px) {
+   
+    .ContainerLeft label h2, .ContainerLeft label h3, .ContainerLeft .Container .icon  {
+        width:262px;
+    }  
+    .ContainerLeft label h2{
+        font-size: 15.5px;
+    } 
+    .ContainerLeft label h3 {
+        font-size: 16px;
+        line-height:22px;
+    }
+    .ContainerLeft label h4 {
+        width: 150px;
+        height: 36.5px;
+        font-size: 20px;
+    }
+    .ContainerRightİcon .icon {
+        font-size: 220px;
+      }
+}
+@media only screen and (max-width:586px) {
+     
+    .ContainerLeft label h2, .ContainerLeft label h3, .ContainerLeft .Container .icon  {
+        width:234px;
+    }  
+    .ContainerLeft label h2{
+        font-size: 13.5px;
+    } 
+    .ContainerLeft label h3 {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .ContainerLeft label h4 {
+        width: 140px;
+        height: 35px;
+        font-size: 19px;
+    }
+    .ContainerRightİcon .icon {
+        font-size: 206px;
+      }
+      .ContainerRightToken {
+        position:absolute;
+        width: 190px;
+        height: 88px;
+      }
+      .ContainerRightToken h3 {
+        font-size: 16.5px;
+      }
+      .ContainerRightİcon .icon {
+        top:142px;
+      }
+}
+@media only screen and (max-width:526px) {
+   
+    .ContainerLeft label h2, .ContainerLeft label h3, .ContainerLeft .Container .icon  {
+        width:224px;
+    }  
+    .ContainerLeft label h2{
+        font-size: 13px;
+    } 
+    .ContainerLeft label h3 {
+        font-size: 13px;
+        line-height: 22px;
+    }
+    .ContainerLeft label h4 {
+        width: 130px;
+        height: 32px;
+        font-size: 17px;
+    }
+    .ContainerRightİcon .icon {
+        font-size: 190px;
+      }
+      .ContainerRightToken {
+        position:absolute;
+        width: 180px;
+        height: 80px;
+      }
+      .ContainerRightToken h3 {
+        font-size: 15px;
+      }
+      .ContainerRightİcon .icon {
+        top:136px;
+      }
+}

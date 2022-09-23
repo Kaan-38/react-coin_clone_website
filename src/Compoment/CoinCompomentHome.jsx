@@ -1,10 +1,8 @@
 import React from 'react'
 import './CoinCompomentHome.css'
-import { MainContext } from '../CreateContext'
-import { useContext } from 'react'
 import { FaBitcoin} from 'react-icons/fa'
 const CoinCompomentHome = () => {
-  const {  } = useContext(MainContext)
+  
   return (
     <div className={`CoinCompomentHome`} >
            <div className='ContainerLeft'>

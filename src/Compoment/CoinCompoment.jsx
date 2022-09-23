@@ -88,7 +88,7 @@ const CoinCompoment = ( { name, image, price, price_change, id } ) => {
        
    <div className='icon-save-container' onClick={((e) => {
       click()
-      const parent = e.target.parentNode
+    
      
      
       if(activee === false){

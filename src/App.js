@@ -76,7 +76,7 @@ return (
                    <Header />
                      <div className='SearchInput'>
                         
-                         <div className={`save-coin-count ${count === 0 ? 'hidden' : ''} `} onClick={(() => setActive('CoinSaveContainerActive'))}>
+                         <div className={`save-coin-count ${count == 0 ? 'hidden' : ''} `} onClick={(() => setActive('CoinSaveContainerActive'))}>
                           <span>
                              {count}
                           </span>

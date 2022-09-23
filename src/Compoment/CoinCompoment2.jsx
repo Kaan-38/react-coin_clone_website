@@ -12,7 +12,7 @@ const CoinCompoment2 = () => {
            {data.filter(coin => coin.name.toUpperCase().includes(search)).map((coin, idx) => (
             <div className='CoinCompoment2Container' key={idx}>
                {
-                  skeletonloading === false ? (
+                  skeletonloading == false ? (
                        <>
                          
                 <label>

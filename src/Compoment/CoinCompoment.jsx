@@ -1,6 +1,6 @@
 import React, { createContext, useContext } from 'react'
 import './CoinCompoment.css'
-
+import { MainContext } from '../CreateContext';
 
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'

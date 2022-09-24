@@ -72,7 +72,7 @@ return (
         
         <MainContext.Provider value={dataa}>
           <div className='ContainerOrtala'>
-               <div className='ContainerKapsam'>
+               <div className='ContainerKapsam' translate='no'>
                    <Header />
                      <div className='SearchInput'>
                         

@@ -268,3 +268,25 @@ header {
         font-size: 9px;
     }
 }
+@media only screen and (max-width:424px) {
+  
+    .HeaderRight h2{
+        width: 80px;
+        font-size: 8.8px;
+    }
+  
+    .HeaderLeft .NavBar {
+        font-size: 8px;
+    }
+}
+@media only screen and (max-width:394px) {
+  
+    .HeaderRight h2{
+        width: 74px;
+        font-size: 8px;
+    }
+  
+    .HeaderLeft .NavBar {
+        font-size: 7.5px;
+    }
+}

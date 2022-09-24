@@ -11,6 +11,31 @@
 .CoinSaveContainerKapsam.active{
     left: 0px;
 }
+.CoinSaveContainer {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.CoinSaveContainer h1 {
+    position: relative;
+    color: white;
+    text-shadow:0 0 2px white;
+    margin-top: 100px;
+}
+.close-icon-container {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.close-icon-container .icon {
+    font-size:37px;
+    color:white;
+    cursor: pointer;
+}
+.close-icon-container .icon:hover {
+    transform: scale(1.03);
+}
 @media only screen and (max-width:730px) {
     .CoinSaveContainerKapsam {
         height:calc(670px - 146px);

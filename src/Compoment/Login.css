@@ -22,14 +22,14 @@
     left: auto;
 }
 
-.LoginContainer div {
+.LoginContainer .LoginContainerGap {
     position: relative;
     display: flex;
     flex-direction: column;
     gap: 38px;
 }
 
-.LoginContainer div span h1 {
+.LoginContainer .LoginContainerGap span h1 {
     position: relative;
     color: white;
     text-shadow: 0 0 2px white;
@@ -37,7 +37,7 @@
     cursor: pointer;
 }
 
-.LoginContainer div span h1::after {
+.LoginContainer .LoginContainerGap span h1::after {
     position: absolute;
     content: '';
     width:100px;
@@ -123,11 +123,16 @@
     left: 0px;
     bottom: -7px;
 }
-
+.icon-container {
+    position: absolute;
+    right: 46px;
+    top: 12px;
+    background-color: red;
+}
 .icon-close {
     position: absolute;
-    right: -40px;
-    top: -25px;
+    left: 0px;
+    right: 0px;
     color: white;
     font-size: 29px;
     cursor: pointer;
@@ -136,3 +141,25 @@
     transform: scale(1.02);
 }
 
+@media only screen and (max-width:580px) {
+    .LoginContainer {
+        width: 366px;
+    }
+}
+@media only screen and (max-width:510px) {
+    .LoginContainer {
+        width: 348px;
+    }
+}
+@media only screen and (max-width:474px) {
+    .LoginContainer {
+        width: 328px;
+    }
+   
+}
+@media only screen and (max-width:414px) {
+    .LoginContainer {
+        width: 316px;
+    }
+   
+}

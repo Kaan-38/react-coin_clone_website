@@ -11,9 +11,14 @@ const Login = () => {
   return (
     <div className='LoginContainerOrtala'>
          <div className={`LoginContainer ${loginactive == true ? 'active' : ''} `} >
-               <div>
-                 
+              
+              <div className='icon-container'>
                  <FaWindowClose className='icon-close' onClick={(() => setLoginactive(false))} />
+               </div>
+              
+              
+               <div className='LoginContainerGap'>
+                 
 
                <span>
                     <h1>

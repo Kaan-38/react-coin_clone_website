@@ -91,10 +91,10 @@ const CoinCompoment = ( { name, image, price, price_change, id } ) => {
     
      
      
-      if(activee === false){
+      if(activee == false){
        setCount(count + 1)
       }
-      else if(activee === true){
+      else if(activee == true){
        setCount(count - 1)
       }
     })}>

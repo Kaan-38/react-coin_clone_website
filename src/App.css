@@ -102,9 +102,9 @@ li {
   cursor: pointer;
 }
 .save-coin-count {
+  position: absolute;
   width:auto;
   height: 100%;
-  position: absolute;
   left: 20px;
   display: flex;
   align-items: center;
@@ -153,3 +153,22 @@ li {
     height: 632px;
   }
 }
+@media only screen and (max-width:546px) {
+  .save-coin-count {
+    left: 3px;
+  }
+}
+
+@media only screen and (max-width:476px) {
+  .SearchInput input {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width:436px) {
+  .SearchInput input {
+    width: 234px;
+  }
+}
+
+

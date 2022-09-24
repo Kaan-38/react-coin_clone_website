@@ -169,6 +169,21 @@
     text-shadow: 0 0 2px #063c61;
 }
 
+@media only screen and (max-width:730px) {
+    .CoinCompoment {
+        height:calc(670px - 146px);
+    }
+  }
+  @media only screen and (max-width:610px) {
+    .CoinCompoment {
+        height:calc(638px - 146px);
+    }
+  }
+  @media only screen and (max-width:586px) {
+    .CoinCompoment {
+        height:calc(632px - 146px);
+    }
+  }
 @media only screen and (max-width:1290px) {
     .CoinCompoment .CoinContainer .Row h2 {
         font-size: 21px;
@@ -270,22 +285,28 @@
     .CoinCompoment .CoinContainer .Row h2 {
         font-size: 8.5px;
     }
+
+    .CoinCompoment .CoinContainer .Row .yükşeliş-çizgi, .CoinCompoment .CoinContainer .Row .düşüş-çizgi {
+        width:56px;
+   }
+   .CoinCompoment .CoinContainer .Row .yükşeliş, .CoinCompoment .CoinContainer .Row .düşüş {
+    width: 52px;
+    font-size: 14px;
+}
+}
+@media only screen and (max-width:430px) {
+
+    .CoinCompoment .CoinContainer .Row h2 {
+        font-size: 7.5px;
+    }
+
+    .CoinCompoment .CoinContainer .Row .yükşeliş-çizgi, .CoinCompoment .CoinContainer .Row .düşüş-çizgi {
+        width:50px;
+   }
+   .CoinCompoment .CoinContainer .Row .yükşeliş, .CoinCompoment .CoinContainer .Row .düşüş {
+    width: 48px;
+    font-size: 13px;
+}
 }
 
 
-
-  @media only screen and (max-width:730px) {
-    .CoinCompoment {
-        height:calc(670px - 146px);
-    }
-  }
-  @media only screen and (max-width:610px) {
-    .CoinCompoment {
-        height:calc(638px - 146px);
-    }
-  }
-  @media only screen and (max-width:586px) {
-    .CoinCompoment {
-        height:calc(632px - 146px);
-    }
-  }

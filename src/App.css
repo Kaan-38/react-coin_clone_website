@@ -152,6 +152,11 @@ li {
     height: 632px;
   }
 }
+@media only screen and (max-width:510px) {
+  .loading-icon {
+    font-size: 210px;
+  }
+}
 @media only screen and (max-width:546px) {
   .save-coin-count {
     left: 3px;

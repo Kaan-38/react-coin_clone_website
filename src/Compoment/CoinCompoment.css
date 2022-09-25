@@ -294,6 +294,9 @@
 }
 }
 @media only screen and (max-width:528px) {
+    .CoinCompoment .CoinContainer {
+        height: 60px;
+    }
     .CoinCompoment .CoinContainer .Row h2 {
         font-size: 7px;
     }

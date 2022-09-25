@@ -51,3 +51,13 @@
         height:calc(632px - 146px);
     }
   }
+  @media only screen and (max-width:730px) {
+    .CoinSaveContainer h1 {
+        font-size: 26px;
+    }
+  }
+  @media only screen and (max-width:754px) {
+    .CoinSaveContainer h1 {
+        font-size: 20px;
+    }
+  }

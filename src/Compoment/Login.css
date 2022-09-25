@@ -26,7 +26,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 38px;
+    gap: 42px;
 }
 
 .LoginContainer .LoginContainerGap span h1 {
@@ -140,6 +140,67 @@
 .icon-close:hover {
     transform: scale(1.02);
 }
+
+.ınput-container {
+    position: absolute;
+    width: 100%;
+    height: 22px;
+    background-color:#940000;
+    box-shadow: 0 0 8px #940000;
+    color: white;
+    text-shadow: 0 0 2px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 4px;
+    bottom: -35px;
+    display: none;
+}
+.ınput-container::after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    border-width: 8px;
+    border-style: solid;
+    border-color:#940000 transparent transparent transparent;
+    transform: rotate(180deg);
+    top: -15.5px;
+    left: 3px;
+}
+.ınput-container.visble-eror-length-small {
+    display: flex;
+}
+.ınput-container.visble-eror-length-small .ınput-username-container-h6.small-length-eror,
+.ınput-container.visble .ınput-username-container-h6.visible ,
+.ınput-container.visble-eror-length-big .ınput-username-container-h6.big-length-eror,
+
+.ınput-container.visble-eror-length-small .ınput-password-container-h6.small-length-eror,
+.ınput-container.visble .ınput-password-container-h6.visible,
+.ınput-container.visble-eror-length-big .ınput-password-container-h6.big-length-eror
+ {
+    display: block;
+}
+.ınput-container.visble {
+    display: flex;
+    background-color: green;
+    box-shadow: 0 0 8px green;
+}
+.ınput-container.visble::after {
+    border-color: green transparent transparent transparent;
+}
+.ınput-container.visble-eror-length-big {
+    display: flex;
+}
+
+.ınput-username-container-h6, .ınput-password-container-h6 {
+    position: relative;
+    color:white;
+    margin-left: 5px;
+    display: none;
+}
+
 
 @media only screen and (max-width:580px) {
     .LoginContainer {

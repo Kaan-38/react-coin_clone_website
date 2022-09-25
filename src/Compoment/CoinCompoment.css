@@ -115,7 +115,7 @@
 .CoinCompoment .CoinContainer .Row .yükşeliş-çizgi {
     position: relative;
     width:124px;
-    height:6.5px;
+    height:7.5px;
     background-color: green;
     box-shadow: 0 0 6px green;
     cursor: pointer;
@@ -126,7 +126,7 @@
 .CoinCompoment .CoinContainer .Row .düşüş-çizgi {
     position: relative;
     width: 124px;
-    height: 6.5px;
+    height:7.5px;
     background-color:#940000;
     box-shadow: 0 0 6px #940000;
     cursor: pointer;
@@ -280,10 +280,9 @@
 }
  
 }
-@media only screen and (max-width:500px) {
-
+@media only screen and (max-width:580px) {
     .CoinCompoment .CoinContainer .Row h2 {
-        font-size: 8.5px;
+        font-size: 9px;
     }
 
     .CoinCompoment .CoinContainer .Row .yükşeliş-çizgi, .CoinCompoment .CoinContainer .Row .düşüş-çizgi {
@@ -294,18 +293,45 @@
     font-size: 14px;
 }
 }
-@media only screen and (max-width:430px) {
-
+@media only screen and (max-width:528px) {
     .CoinCompoment .CoinContainer .Row h2 {
-        font-size: 7.5px;
+        font-size: 7px;
     }
 
     .CoinCompoment .CoinContainer .Row .yükşeliş-çizgi, .CoinCompoment .CoinContainer .Row .düşüş-çizgi {
-        width:50px;
+        width:42px;
    }
    .CoinCompoment .CoinContainer .Row .yükşeliş, .CoinCompoment .CoinContainer .Row .düşüş {
-    width: 48px;
-    font-size: 13px;
+    width: 52px;
+    font-size: 14px;
+}
+}
+
+
+@media only screen and (max-width:440px) {
+    .CoinCompoment .CoinContainer .Row h2 {
+        font-size: 6px;
+    }
+
+    .CoinCompoment .CoinContainer .Row .yükşeliş-çizgi, .CoinCompoment .CoinContainer .Row .düşüş-çizgi {
+        width:36px;
+   }
+   .CoinCompoment .CoinContainer .Row .yükşeliş, .CoinCompoment .CoinContainer .Row .düşüş {
+    width: 52px;
+    font-size: 14px;
+}
+}
+@media only screen and (max-width:420px) {
+    .CoinCompoment .CoinContainer .Row h2 {
+        font-size: 6px;
+    }
+
+    .CoinCompoment .CoinContainer .Row .yükşeliş-çizgi, .CoinCompoment .CoinContainer .Row .düşüş-çizgi {
+        width:30px;
+   }
+   .CoinCompoment .CoinContainer .Row .yükşeliş, .CoinCompoment .CoinContainer .Row .düşüş {
+    width: 52px;
+    font-size: 14px;
 }
 }
 

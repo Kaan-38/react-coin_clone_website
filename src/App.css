@@ -156,6 +156,10 @@ li {
   .ContainerKapsam {
     height: 600px;
   }
+  li {
+    width: 20px;
+    height: 20px;
+  }
 }
 @media only screen and (max-width:510px) {
   .loading-icon {

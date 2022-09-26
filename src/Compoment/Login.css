@@ -201,7 +201,11 @@
     display: none;
 }
 
-
+@media only screen and (max-width:610px) {
+    .LoginContainer {
+     top: 170px;
+    }
+}
 @media only screen and (max-width:580px) {
     .LoginContainer {
         width: 366px;
@@ -212,10 +216,17 @@
         width: 348px;
     }
 }
+@media only screen and (max-width:500px) {
+    .LoginContainer {
+       top: 160px;
+       width: 328px;
+       height: 400px;
+    }
+}
 @media only screen and (max-width:474px) {
     .LoginContainer {
         width: 328px;
-        height: 390px;
+        height: 396px;
     }
    
 }

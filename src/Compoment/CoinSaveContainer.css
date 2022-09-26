@@ -51,6 +51,11 @@
         height:calc(632px - 146px);
     }
   }
+  @media only screen and (max-width:500px) {
+    .CoinSaveContainerKapsam {
+        height:calc(600px - 146px);
+    }
+  }
   @media only screen and (max-width:730px) {
     .CoinSaveContainer h1 {
         font-size: 26px;

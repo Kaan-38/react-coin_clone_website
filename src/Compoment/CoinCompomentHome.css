@@ -196,6 +196,30 @@
     margin-left: 5px;
     cursor: pointer;
 }
+@media only screen and (max-width:730px) {
+    .CoinCompomentHome  {
+        height:calc(670px - 146px);
+    }
+  }
+  @media only screen and (max-width:610px) {
+    .CoinCompomentHome  {
+        height:calc(638px - 146px);
+    }
+  }
+  @media only screen and (max-width:586px) {
+    .CoinCompomentHome  {
+        height:calc(632px - 146px);
+    }
+  }
+  @media only screen and (max-width:500px) {
+    .CoinCompomentHome  {
+        height:calc(600px - 146px);
+    }
+  }
+
+
+
+
 @media only screen and (max-width:1350px) {
    
     .ContainerLeft label h2 , .ContainerLeft label h3, .ContainerLeft .Container .icon  {

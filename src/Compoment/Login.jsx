@@ -41,6 +41,14 @@ const Login = () => {
       
    },[ınput_username, ınput_password])
  
+    const LoginContainer = document.querySelector('.LoginContainer')
+    document.addEventListener('click', (e) =>{
+       if(e.composedPath().includes(LoginContainer)){
+         console.log('içi')
+       }else{
+         console.log('dış')
+       }
+    })
 
   return (
     <div className='LoginContainerOrtala'>

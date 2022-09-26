@@ -1,0 +1,34 @@
+.containerOffline {
+    position: absolute;
+    width: 100%;
+    height:calc(730px - 146px);
+    left: 0;
+    top:146px;
+}
+.containerOfflineEror {
+    position: relative;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    margin-top: 20px;
+}
+.containerOfflineEror.active {
+    display: flex;
+}
+.containerOfflineEror h2 {
+    position: relative;
+    width: auto;
+    height: 44px;
+    background-color:#940000;
+    box-shadow: 0 0 18px #940000;
+    color: white;
+    text-shadow: 0 0 2px white;
+    display: flex;
+    align-items: center;
+    border-radius: 4px;
+    cursor: pointer;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 3px;
+}

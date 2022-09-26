@@ -7,6 +7,7 @@ import Header from './Compoment/Header'
 import CoinCompoment from './Compoment/CoinCompoment'
 import { MainContext } from './CreateContext'
 import CoinCompoment2 from './Compoment/CoinCompoment2'
+import Offline from './Compoment/Offline'
 import { FaBitcoin } from 'react-icons/fa'
 import CoinCompomentHome from './Compoment/CoinCompomentHome'
 import Login from './Compoment/Login'
@@ -18,7 +19,7 @@ import CoinSaveContainer from './Compoment/CoinSaveContainer'
 
 
 const App = () => {
-  const [loginactive, setLoginactive] = useState(false)
+  const [loginactive, setLoginactive] = useState('')
   const [loading, setLoaing] = useState(false)
   const [data, setData] = useState([])
   const [search, setSearch] = useState('')
@@ -73,6 +74,7 @@ return (
         <MainContext.Provider value={dataa}>
           <div className='ContainerOrtala'>
                <div className='ContainerKapsam' translate='no'>
+                 <Offline />
                    <Header />
                      <div className='SearchInput'>
                         

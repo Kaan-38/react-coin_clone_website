@@ -83,6 +83,7 @@ return (
                          <FontAwesomeIcon icon={faStar} className='star-icon-save'  />
                         
                          </div>
+                    
                         
                          <input type="text" placeholder='Search Coin...' onChange={((e) => setSearch(e.target.value.toUpperCase()))} />
                      </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import './CoinCompomentHome.css'
 import { FaBitcoin} from 'react-icons/fa'
+import { BsCurrencyBitcoin  } from 'react-icons/bs'
 const CoinCompomentHome = () => {
   
   return (
@@ -9,7 +10,7 @@ const CoinCompomentHome = () => {
                <div className='Container'>
                <label>
                <div className='icon'>
-               <FaBitcoin className='ContainerLeftİcon' />
+                <BsCurrencyBitcoin className='ContainerLeftİcon' />
                
                </div>
                </label>

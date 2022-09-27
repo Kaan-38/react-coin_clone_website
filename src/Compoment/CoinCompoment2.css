@@ -280,6 +280,12 @@
     .CoinCompoment2Container label h2 {
       font-size: 20px;
     }
+    .CoinCompoment2Container span .analiz-yükşeliş-cubuk {
+      width: 120px;
+    }
+    .CoinCompoment2Container span .analiz-düşüş-cubuk {
+      width: 120px;
+    }
   }
   
   

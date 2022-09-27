@@ -83,6 +83,7 @@ body {
   font-size: 44px;
   margin-top: 6px;
 }
+
 ul {
   position: absolute;
   list-style: none;
@@ -159,6 +160,9 @@ li {
   li {
     width: 20px;
     height: 20px;
+  }
+  .save-coin-count span {
+    font-size: 15.5px;
   }
 }
 @media only screen and (max-width:510px) {

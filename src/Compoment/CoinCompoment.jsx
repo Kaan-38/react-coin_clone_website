@@ -26,6 +26,7 @@ const CoinCompoment = ( { name, image, price, price_change, id } ) => {
      }
      CoinContainer.forEach((item) => 
      item.addEventListener('click', active_class_compomentCoin))
+     
      },[])
 
   return (

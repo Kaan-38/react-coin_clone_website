@@ -191,8 +191,8 @@
     content: '';
     width: 100%;
     height: 100%;
-    background-color: rgb(236, 236, 236);
-    transform: translateX(-90%);
+    background:linear-gradient(to right, transparent, #e0ecf4, transparent);
+    transform: translateX(-100%);
     animation:skeleton 1s  linear infinite;
   }
    @keyframes skeleton {
@@ -201,13 +201,15 @@
     }
    }
    
-  .SkeletonLeft .Skeletonİmg.loading, .SkeletonLeft .Skeletonİmg.loading::after  {
+  .SkeletonLeft .Skeletonİmg.loading, .SkeletonLeft .Skeletonİmg.loading  {
     width: 72px;
     height: 72px;
     border-radius: 50%;
     background-color: #477ac4;
   }
-  
+  .SkeletonLeft .Skeletonİmg.loading, .SkeletonLeft .Skeletonİmg.loading::after {
+    background:linear-gradient(to right, transparent, #e0ecf4, transparent);
+  }
   
   .SkeletonRight {
     position:absolute;

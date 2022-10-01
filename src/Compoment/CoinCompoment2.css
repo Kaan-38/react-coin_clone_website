@@ -201,15 +201,13 @@
     }
    }
    
-  .SkeletonLeft .Skeletonİmg.loading, .SkeletonLeft .Skeletonİmg.loading  {
+  .SkeletonLeft .Skeletonİmg.loading, .SkeletonLeft .Skeletonİmg.loading,
+  .SkeletonLeft .Skeletonİmg.loading, .SkeletonLeft .Skeletonİmg.loading::after {
     width: 72px;
     height: 72px;
     border-radius: 50%;
-    background-color: #477ac4;
-  }
-  .SkeletonLeft .Skeletonİmg.loading, .SkeletonLeft .Skeletonİmg.loading::after {
-    background:linear-gradient(to right, transparent, #e0ecf4, transparent);
-  }
+   }
+  
   
   .SkeletonRight {
     position:absolute;

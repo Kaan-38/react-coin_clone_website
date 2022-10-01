@@ -191,8 +191,8 @@
     content: '';
     width: 100%;
     height: 100%;
-    background:linear-gradient(to right, transparent, #e0ecf4, transparent);
-    transform: translateX(-100%);
+    background-color: rgb(236, 236, 236);
+    transform: translateX(-90%);
     animation:skeleton 1s  linear infinite;
   }
    @keyframes skeleton {

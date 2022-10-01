@@ -1,14 +1,13 @@
 import React, {  useContext } from 'react'
 import './CoinCompoment.css'
 import { MainContext } from '../CreateContext';
-
 import { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faStar } from '@fortawesome/free-solid-svg-icons'
-
 import { useEffect } from 'react';
 
 const CoinCompoment = ( { name, image, price, price_change, id } ) => {
+   
     const {setCount, count} = useContext(MainContext)
     
     const [activee, setActivee] = useState(false)
@@ -88,12 +87,17 @@ const CoinCompoment = ( { name, image, price, price_change, id } ) => {
  
        
    <div className='icon-save-container' onClick={((e) => {
-      click()
-    
-     
-     
+      click() 
+      const CoinSaveContainer= document.querySelector('.CoinSaveContainer')
+      const parent = e.target.parentNode.cloneNode(true)
+      
+      
+      
+
+
       if(activee == false){
        setCount(count + 1)
+       CoinSaveContainer.appendChild(parent)
       }
       else if(activee == true){
        setCount(count - 1)

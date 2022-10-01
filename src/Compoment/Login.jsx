@@ -44,9 +44,9 @@ const Login = () => {
     const LoginContainer = document.querySelector('.LoginContainer')
     document.addEventListener('click', (e) =>{
        if(e.composedPath().includes(LoginContainer)){
-         console.log('içi')
+        
        }else{
-         console.log('dış')
+         
        }
     })
 

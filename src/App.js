@@ -18,6 +18,7 @@ import {  faStar } from '@fortawesome/free-solid-svg-icons'
 import CoinSaveContainer from './Compoment/CoinSaveContainer'
 
 
+
 const App = () => {
   const [loginactive, setLoginactive] = useState('')
   const [loading, setLoaing] = useState(false)
@@ -104,7 +105,7 @@ return (
                     
                     ):(
                      <>
-                    
+                
                     <CoinCompomentHome />
 
                     <div className={`CoinCompoment ${active == 'CoinCompoment1Active' ? 'active' : ''} `} >

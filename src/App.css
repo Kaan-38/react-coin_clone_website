@@ -171,9 +171,7 @@ li {
   }
 }
 @media only screen and (max-width:546px) {
-  .ContainerKapsam  {
-    height: 100vh;
-  }
+
   .save-coin-count {
     left: 3px;
   }

@@ -203,37 +203,21 @@
 
 @media only screen and (max-width:610px) {
     .LoginContainer {
-     top: 170px;
-    }
-}
-@media only screen and (max-width:580px) {
-    .LoginContainer {
-        width: 366px;
-    }
-}
-@media only screen and (max-width:510px) {
-    .LoginContainer {
-        width: 348px;
-    }
-}
-@media only screen and (max-width:500px) {
-    .LoginContainer {
-       top: 160px;
-       width: 328px;
-       height: 400px;
-    }
-}
-@media only screen and (max-width:474px) {
-    .LoginContainer {
-        width: 328px;
-        height: 396px;
-    }
-   
-}
-@media only screen and (max-width:414px) {
-    .LoginContainer {
-        width: 316px;
-    
-    }
-   
+        width: 338px;
+        height: 368px;
+        top: 170px;
+     }
+     .LoginContainer .LoginContainerGap {
+        gap: 35px;
+     }
+     .LoginContainer  label {
+        height: 33px;
+     }
+     .LoginContainer label input:not(:placeholder-shown) + h4, .LoginContainer label input:focus + h4{
+      top: -11px;
+     }
+     .ınput-container {
+        height: 16px;
+        bottom:-29px;
+     }
 }

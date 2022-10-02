@@ -416,7 +416,7 @@
         }
     }
 }
-@media only screen and (max-width:483px) {
+@media only screen and (max-width:500px) {
     .ContainerLeft label h2, .ContainerLeft label h3, .ContainerLeft .Container .icon  {
         width:212px;
     }  

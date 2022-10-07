@@ -571,3 +571,10 @@
         }
     }
 }
+
+
+@media only screen and (max-width:836px) {
+    .CoinCompomentHome {
+        height: 100vh;
+    }
+}

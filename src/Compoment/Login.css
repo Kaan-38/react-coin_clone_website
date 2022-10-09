@@ -3,6 +3,96 @@
     align-items: center;
     justify-content: center;
 }
+.ContainerLoginEror {
+    position: absolute;
+    width:300px;
+    height: 104px;
+    background-color:white;
+    box-shadow: 0 0 14px white;
+    top: 20px;
+    right: -100%;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    transition: 0.8s;
+}
+.ContainerLoginEror.active {
+    right: 18px;
+}
+
+.ContainerLoginEror.active::after {
+    position: absolute;
+    content: '';
+    width:100%;
+    height:5px;
+    background-color:#940000;
+    box-shadow: 0 0 10px #940000;
+    left: 100%;
+    bottom: 0px;
+    animation:animation 2.4s linear forwards;
+}
+.ContainerLoginEror span {
+    position:relative;
+    width: auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.ContainerLoginEror span .icon-contaier {
+    position: relative;
+    width: 56px;
+    height: 56px;
+    background-color:#940000;
+    box-shadow: 0 0 16px #940000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.ContainerLoginEror span .icon-contaier .icon {
+    font-size: 36px;
+    color:white;
+    text-shadow:0 0 12px white;
+}
+.ContainerLoginEror span h4 {
+   position:relative;
+   color: #940000;
+   width: 180px;
+   text-shadow: 0 0 2px #940000;
+   font-size: 14px;
+   margin-left: 6px;
+   cursor: pointer;
+}
+
+@keyframes animation {
+    100% {
+        left: 0px;
+    }
+}
+
+.ContainerLoginEror .container-close {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: #940000;
+    box-shadow: 0 0 10px #940000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+    right: 6px;
+    top: 6px;
+}
+.ContainerLoginEror .container-close:hover {
+    transform: scale(1.02);
+}
+.ContainerLoginEror .container-close .icon {
+    color: white;
+    font-size: 20px;
+}
 .LoginContainer {
     position: absolute;
     width: 386px;

@@ -36,7 +36,7 @@ const App = () => {
   useEffect(() =>{
     setInterval(() => {
       Veri()
-    },1000);
+    },1000)
   },[])
 
   useEffect(() =>{

@@ -1,9 +1,11 @@
 import React, { useContext } from 'react'
 import './Login.css'
 import { MainContext } from '../CreateContext'
-import { FaWindowClose } from 'react-icons/fa'
+import {  FaWindowClose } from 'react-icons/fa'
+import { MdClose } from 'react-icons/md'
 import { useState } from 'react'
 import { useEffect } from 'react'
+
 
 const Login = () => {
    const { setLoginactive, loginactive } = useContext(MainContext)
@@ -11,6 +13,7 @@ const Login = () => {
    const [active_username, setActive_username] = useState('')
    const [ınput_password, setInput_password] = useState('')
    const [active_password, setActive_password] = useState('')
+   const [username_password_erorr, setUsername_password_erorr] = useState(false)
    useEffect(() => {
       if(ınput_username.length == 0){
          setActive_username('ınput-container none')
@@ -50,12 +53,37 @@ const Login = () => {
        }
     })
 
+   
+ 
   return (
     <div className='LoginContainerOrtala'>
+         <div className={`ContainerLoginEror ${username_password_erorr == true ? 'active' : ''} `}>
+              
+              <div className='container-close' onClick={(() => {
+                 setUsername_password_erorr(false)
+              })}>
+                <MdClose className='icon' />
+              </div>
+
+              <span>
+                 <div className='icon-contaier'>
+                    <MdClose className='icon' />
+                 </div>
+         
+                 <h4>
+                   THE LOGIN INFORMATION IS INCORRECT
+                 </h4>
+              </span>
+         </div>
+
          <div className={`LoginContainer ${loginactive == true ? 'active' : ''} `} >
               
               <div className='icon-container'>
-                 <FaWindowClose className='icon-close' onClick={(() => setLoginactive(false))} />
+                 <FaWindowClose className='icon-close' onClick={(() => {
+                  setLoginactive(false)
+                  setInput_username('')
+                  setInput_password('')
+                 })} />
                </div>
               
               
@@ -69,7 +97,7 @@ const Login = () => {
                 </span>
                
                <label>
-                     <input type="text" placeholder=' ' onChange={((e) => setInput_username(e.target.value))} />
+                     <input type="text" placeholder=' ' value={ınput_username} onChange={((e) => setInput_username(e.target.value))} />
                      <h4>
                        USERNAME
                      </h4>
@@ -88,7 +116,7 @@ const Login = () => {
               
 
                <label>
-                     <input type="password" placeholder=' ' onChange={((e) => setInput_password(e.target.value))} />
+                     <input type="password" placeholder=' ' value={ınput_password} onChange={((e) => setInput_password(e.target.value))} />
                       <h4>
                          PASSWORD
                       </h4>
@@ -108,7 +136,9 @@ const Login = () => {
                </label>
 
                <span>
-                   <h3>
+                   <h3 onClick={(() => {
+                      setUsername_password_erorr(true)
+                   })}>
                       LOGİN
                    </h3>
                </span>

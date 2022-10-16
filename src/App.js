@@ -11,9 +11,7 @@ import Offline from './Compoment/Offline'
 import { FaBitcoin } from 'react-icons/fa'
 import CoinCompomentHome from './Compoment/CoinCompomentHome'
 import Login from './Compoment/Login'
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
 import {  faStar } from '@fortawesome/free-solid-svg-icons'
 import CoinSaveContainer from './Compoment/CoinSaveContainer'
 

@@ -62,7 +62,10 @@ const Login = () => {
               <div className='container-close' onClick={(() => {
                  setUsername_password_erorr(false)
               })}>
-                <MdClose className='icon' />
+                <MdClose className='icon'  onClick={(() => {
+                       setInput_username('')
+                       setInput_password('')
+                    })} />
               </div>
 
               <span>
@@ -83,6 +86,8 @@ const Login = () => {
                   setLoginactive(false)
                   setInput_username('')
                   setInput_password('')
+                  setActive_username('ınput-container none')
+                  setActive_password('ınput-container none')
                  })} />
                </div>
               
@@ -137,7 +142,13 @@ const Login = () => {
 
                <span>
                    <h3 onClick={(() => {
-                      setUsername_password_erorr(true)
+                      if(ınput_username.length > 4 && ınput_password.length > 4){
+                        setUsername_password_erorr(true)
+                      }
+                      if(ınput_username.length == 0 && ınput_password.length == 0) {
+                        setActive_username('ınput-container visble-eror-length-small')
+                        setActive_password('ınput-container visble-eror-length-small')
+                      }
                    })}>
                       LOGİN
                    </h3>

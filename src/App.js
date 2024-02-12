@@ -27,8 +27,12 @@ const App = () => {
   const [skeletonloading, setSkeletonloading] = useState(false)
 
   const Veri = async () =>{
+      /*
       const response = await axios.get ('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false')
       setData(response.data)
+      */
+   const post = await (await fetch('https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=100&page=1&sparkline=false')).json() 
+   setData(post)   
   }
   useEffect(() =>{
     Veri()

@@ -123,7 +123,7 @@ return (
                   
                      <CoinCompoment2 />
                      
-                     <CoinSaveContainer />
+                     
 
                      <Login />
                   <ul>

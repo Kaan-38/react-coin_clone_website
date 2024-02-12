@@ -3,17 +3,16 @@ import axios from 'axios'
 import { useEffect } from 'react'
 import { useState } from 'react'
 import './App.css'
-import Header from './Compoment/Header'
-import CoinCompoment from './Compoment/CoinCompoment'
+import Header from './Component/Header'
+import CoinCompoment from './Component/CoinCompoment'
 import { MainContext } from './CreateContext'
-import CoinCompoment2 from './Compoment/CoinCompoment2'
-import Offline from './Compoment/Offline'
+import CoinCompoment2 from './Component/CoinCompoment2'
+import Offline from './Component/Offline'
 import { FaBitcoin } from 'react-icons/fa'
-import CoinCompomentHome from './Compoment/CoinCompomentHome'
-import Login from './Compoment/Login'
+import CoinCompomentHome from './Component/CoinCompomentHome'
+import Login from './Component/Login'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {  faStar } from '@fortawesome/free-solid-svg-icons'
-import CoinSaveContainer from './Compoment/CoinSaveContainer'
 
 
 
@@ -32,9 +31,7 @@ const App = () => {
       setData(response.data)
   }
   useEffect(() =>{
-    setInterval(() => {
-      Veri()
-    },1000)
+    Veri()
   },[])
 
   useEffect(() =>{
